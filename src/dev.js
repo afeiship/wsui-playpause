@@ -1,5 +1,5 @@
 import './dev.scss';
-import { ReactSwitchCase, ReactCase, ReactDefault } from './main';
+import { ReactSwitchCase, Case, Default } from './main';
 
 /*===example start===*/
 
@@ -34,16 +34,16 @@ class App extends React.Component {
           Random
         </button>
         <ReactSwitchCase condition={this.state.condition}>
-          <ReactCase value="component1">
+          <Case value="component1">
             <h1>H1 Component</h1>
-          </ReactCase>
-          <ReactCase value="component2">
+          </Case>
+          <Case value="component2">
             <h2>H2 Component</h2>
-          </ReactCase>
-          <ReactDefault>
+          </Case>
+          <Default>
             Nothing!
             <strong>default state</strong>
-          </ReactDefault>
+          </Default>
         </ReactSwitchCase>
       </div>
     );

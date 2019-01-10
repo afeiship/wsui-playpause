@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 export default class extends Component {
-  static componentName = 'case';
+  static displayName = 'default';
   render() {
     return this.props.children;
   }

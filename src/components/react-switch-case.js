@@ -1,9 +1,4 @@
 import React, { Component, Children } from 'react';
-import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import noop from 'noop';
-import objectAssign from 'object-assign';
 
 export default class extends Component {
   /*===properties start===*/
@@ -16,8 +11,8 @@ export default class extends Component {
       defaults = [];
 
     Children.forEach(this.props.children, (item) => {
-      console.log(item.type.componentName);
-      switch (item.type.componentName) {
+      const { displayName } = item.type;
+      switch (displayName) {
         case 'case':
           if (this.props.condition === item.props.value) {
             cases.push(item);

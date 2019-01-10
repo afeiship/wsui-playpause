@@ -1,6 +1,9 @@
 # react-switch-case
 > Switch statement in React components
 
+## thanks to:
+- https://github.com/AlexSergey/react-switch-case
+
 ## properties:
 ```javascript
 
@@ -61,16 +64,16 @@ class App extends React.Component {
           Random
         </button>
         <ReactSwitchCase condition={this.state.condition}>
-          <ReactCase value="component1">
+          <Case value="component1">
             <h1>H1 Component</h1>
-          </ReactCase>
-          <ReactCase value="component2">
+          </Case>
+          <Case value="component2">
             <h2>H2 Component</h2>
-          </ReactCase>
-          <ReactDefault>
+          </Case>
+          <Default>
             Nothing!
             <strong>default state</strong>
-          </ReactDefault>
+          </Default>
         </ReactSwitchCase>
       </div>
     );

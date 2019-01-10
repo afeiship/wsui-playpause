@@ -1,6 +1,9 @@
 # react-switch-case
 > Switch statement in React components
 
+## thanks to:
+- https://github.com/AlexSergey/react-switch-case
+
 ## properties:
 ```javascript
 BACKUP_PROPERTIES

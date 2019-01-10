@@ -1,5 +1,5 @@
 import ReactSwitchCase from 'components/react-switch-case';
-import ReactCase from 'components/react-case';
-import ReactDefault from 'components/react-default';
+import Case from 'components/case';
+import Default from 'components/default';
 
-export { ReactSwitchCase, ReactCase, ReactDefault };
+export { ReactSwitchCase, Case, Default };
