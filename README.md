@@ -1,83 +1,39 @@
-# react-switch-case
-> Switch statement in React components
+# wsui-playpause
+> Play pause button for wsui.
 
-## thanks to:
-- https://github.com/AlexSergey/react-switch-case
+[![version][version-image]][version-url]
+[![license][license-image]][license-url]
+[![size][size-image]][size-url]
+[![download][download-image]][download-url]
 
-## properties:
-```javascript
-
-  static propTypes = {};
-  static defaultProps = {};
-  
+## installation
+```shell
+npm i @jswork/wsui-playpause
 ```
 
-## install && import:
-```bash
-npm install --save afeiship/react-switch-case --registry=https://registry.npm.taobao.org
-```
-
-```js
-import ReactSwitchCase from 'react-switch-case';
-```
-
+## usage
 ```scss
-// customize your styles:
-$react-switch-case-options:(
-);
-
-@import 'node_modules/react-switch-case/dist/style.scss';
+// use sass
+@import '~@jswork/wsui-playpause/dist/index.scss';
+// use css
+@import '~@jswork/wsui-playpause/dist/style.css';
 ```
 
+## preview
+- https://afeiship.github.io/wsui-playpause/
 
-## usage:
-```jsx
+## license
+Code released under [the MIT license](https://github.com/afeiship/wsui-playpause/blob/master/LICENSE.txt).
 
-// install: npm install afeiship/react-switch-case --save
-// import : import ReactSwitchCase from 'react-switch-case'
+[version-image]: https://img.shields.io/npm/v/@jswork/wsui-playpause
+[version-url]: https://npmjs.org/package/@jswork/wsui-playpause
 
-class App extends React.Component {
-  state = {
-    condition: 'component2'
-  };
+[license-image]: https://img.shields.io/npm/l/@jswork/wsui-playpause
+[license-url]: https://github.com/afeiship/wsui-playpause/blob/master/LICENSE.txt
 
-  constructor(props) {
-    super(props);
-    window.demo = this;
-    window.refs = this.refs;
-    window.rc = this.refs.rc;
-  }
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/wsui-playpause
+[size-url]: https://github.com/afeiship/wsui-playpause/blob/master/dist/wsui-playpause.min.js
 
-  _onClick1 = (e) => {
-    const arr = ['component1', 'component2', 'component3', 'other'];
-    const index = parseInt(Math.random() * 4);
-    // console.log('index:->', index);
-    this.setState({
-      condition: arr[index]
-    });
-  };
+[download-image]: https://img.shields.io/npm/dm/@jswork/wsui-playpause
+[download-url]: https://www.npmjs.com/package/@jswork/wsui-playpause
 
-  render() {
-    return (
-      <div className="hello-react-switch-case">
-        <button className="button" onClick={this._onClick1}>
-          Random
-        </button>
-        <ReactSwitchCase condition={this.state.condition}>
-          <Case value="component1">
-            <h1>H1 Component</h1>
-          </Case>
-          <Case value="component2">
-            <h2>H2 Component</h2>
-          </Case>
-          <Default>
-            Nothing!
-            <strong>default state</strong>
-          </Default>
-        </ReactSwitchCase>
-      </div>
-    );
-  }
-}
-
-```

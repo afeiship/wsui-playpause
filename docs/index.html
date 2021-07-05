@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>wsui-playpause</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    center{
+      padding:100px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <button button class="wsui-playpause"></button>
+  </center>
+  <script>
+    var el = document.querySelector('button');
+    el.addEventListener('click',()=>{
+      el.classList.toggle('is-paused')
+    })
+  </script>
+</body>
+
+</html>
