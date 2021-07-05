@@ -1,16 +1,21 @@
 /*wsui-playpause Start*/
 $wsui-playpause-options: (
-  color: #f00,
+  color: #202020,
 ) !default;
 
 .wsui-playpause {
+  $color: map-get(
+    $map: $wsui-playpause-options,
+    $key: color,
+  );
+
   border: 0;
   background: transparent;
   box-sizing: border-box;
   width: 0;
   height: 7.4em;
 
-  border-color: transparent transparent transparent #202020;
+  border-color: transparent transparent transparent $color;
   transition: 100ms all ease;
   cursor: pointer;
 
@@ -24,7 +29,7 @@ $wsui-playpause-options: (
   }
 
   &:hover {
-    border-color: transparent transparent transparent #404040;
+    border-color: transparent transparent transparent lighten($color, 10%);
   }
 }
 /*wsui-playpause End*/

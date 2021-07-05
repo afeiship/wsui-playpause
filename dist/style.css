@@ -3,7 +3,7 @@
  * description: Play pause button for wsui.
  * homepage: https://github.com/afeiship/wsui-playpause
  * version: 1.0.0
- * date: 2021-07-06 00:06:54
+ * date: 2021-07-06 00:08:49
  * license: MIT
  */
 /*wsui-playpause Start*/
@@ -22,6 +22,6 @@
     border-style: double;
     border-width: 0px 0 0px 6em; }
   .wsui-playpause:hover {
-    border-color: transparent transparent transparent #404040; }
+    border-color: transparent transparent transparent #3a3a3a; }
 
 /*wsui-playpause End*/
