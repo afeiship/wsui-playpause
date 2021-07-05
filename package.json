@@ -30,5 +30,13 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "keywords": [
+    "wsui",
+    "play",
+    "pause",
+    "button",
+    "video",
+    "audio"
+  ]
 }
